@@ -4,13 +4,13 @@ from io import BytesIO
 
 # ================= إعداد الصفحة =================
 st.set_page_config(page_title="Real Estate System", layout="wide")
-st.title("🏠 نظام فلترة العقارات الذكي")
+st.title("Abanoub side")
 
 # ================= رفع الملف =================
-uploaded_file = st.file_uploader("📂 ارفع ملف الإكسيل أو CSV", type=["xlsx", "csv"])
+uploaded_file = st.file_uploader(" upload file ", type=["xlsx", "csv"])
 
 if uploaded_file is None:
-    st.info("⬆️ من فضلك ارفع الملف للبدء")
+    st.info("⬆️")
     st.stop()
 
 # ================= تحميل البيانات =================
